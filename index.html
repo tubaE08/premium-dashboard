@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Verify Number</title>
+<title>Ex Call Bomberr</title>
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -80,7 +80,7 @@ body{background:#f4f7f6;color:#14213d;font-family:Inter,Arial,sans-serif;min-hei
 <body>
 
 <div class="header">
- <div class="logo">NOVA</div>
+ <div class="logo">Ex call Bomber</div>
  <button class="burger" id="open" aria-label="Open menu"><span></span><span></span><span></span></button>
 </div>
 <div class="hero"><div class="sun"></div><div class="hill"></div><div class="road"></div></div>
@@ -88,8 +88,8 @@ body{background:#f4f7f6;color:#14213d;font-family:Inter,Arial,sans-serif;min-hei
 <div class="wrap">
  <!-- Dashboard -->
  <div class="card" id="dashboard">
-  <h2>Verify Number</h2>
-  <p class="sub">Enter a phone number to check it.</p>
+  <h2>Enter Number</h2>
+  <p class="sub">Enter a phone number.</p>
   <form id="form">
    <div class="field">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="#0e9f4f"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
@@ -98,7 +98,7 @@ body{background:#f4f7f6;color:#14213d;font-family:Inter,Arial,sans-serif;min-hei
      <input id="number" type="tel" placeholder="019XXXXXXXX" required>
     </div>
    </div>
-   <button class="btn" id="submit" type="submit">VERIFY</button>
+   <button class="btn" id="Submit" type="submit">Submit</button>
   </form>
  </div>
 
@@ -128,7 +128,7 @@ body{background:#f4f7f6;color:#14213d;font-family:Inter,Arial,sans-serif;min-hei
   </div>
   <div class="handle">@Efty67 on Telegram</div>
  </div>
- <div class="copy">© 2026 Premium API Dashboard</div>
+ <div class="copy">© 2026 Powered by Team ex <> Efty</div>
 </div>
 
 <!-- Menu drawer -->
@@ -209,7 +209,7 @@ $('form').addEventListener('submit',async e=>{
 
  const btn=$('submit');
  btn.disabled=true;
- btn.textContent='CHECKING...';
+ btn.textContent='Sending..';
 
  try{
   const r=await fetch('/api/verify?num='+encodeURIComponent(number));
@@ -221,7 +221,7 @@ $('form').addEventListener('submit',async e=>{
  }
 
  btn.disabled=false;
- btn.textContent='VERIFY';
+ btn.textContent='Submit';
 });
 </script>
 </body>
